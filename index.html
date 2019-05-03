@@ -25,6 +25,9 @@ http://www.templatemo.com/tm-511-journey
               <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
               <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
           <![endif]-->
+                
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6/css/select2.min.css" rel="stylesheet" />
+                
       </head>
 
       <body>
@@ -36,7 +39,7 @@ http://www.templatemo.com/tm-511-journey
                         <nav class="navbar navbar-expand-lg narbar-light">
                             <a class="navbar-brand mr-auto" href="#">
                                 <img src="img/logo.png" alt="Site logo">
-                                Journey
+                                Trippo
                             </a>
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -50,7 +53,7 @@ http://www.templatemo.com/tm-511-journey
                                     <a class="nav-link" href="#tm-section-2">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-3">Recommended Places</a>
+                                    <a class="nav-link" href="#tm-section-3">Examples</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#tm-section-4">Contact Us</a>
@@ -80,9 +83,9 @@ http://www.templatemo.com/tm-511-journey
                         <div class="row tm-search-form tm-banner-row" style="margin-top: 20px;margin-left: auto; margin-right: auto;" id="tm-section-search">
                         
                             <div class="row">
-                                <ul class="nav nav-pills">
-                                  <li class="active nav-item"><a class="nav-link active" data-toggle="pill" href="#exactSearch">Exact search</a></li>
-                                  <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#cheapestSearch">Find the cheapest route</a></li>
+                                <ul class="nav nav-pills" id="searchType">
+                                  <li class="active nav-item" id="exactSearchLink"><a class="nav-link active" data-toggle="pill" href="#exactSearch">Exact search</a></li>
+                                  <li class="nav-item" id="cheapestSearchLink"><a class="nav-link" data-toggle="pill" href="#cheapestSearch">Find the cheapest route</a></li>
                                 </ul>
                             </div>
                             
@@ -94,17 +97,70 @@ http://www.templatemo.com/tm-511-journey
                                             <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
         										<label for="inputRoom">Origin</label>
         										<select name="room" class="form-control tm-select" id="inputRoom">
-        											<option value="1" selected>SVX</option>
-        											<option value="2">MOW</option>
+                                                    <optgroup label="Russia">
+            											<option value="rus.1" selected>Ekaterinburg</option>
+            											<option value="rus.2">Moscow</option>
+                                                        <option value="rus.3">Chelyabinsk</option>
+                                                        <option value="rus.4">Perm</option>
+                                                        <option value="rus.5">St.Petersburg</option>
+                                                    </optgroup>
+                                                    <optgroup label="Spain">
+            											<option value="esp.1">Barcelona</option>
+            											<option value="esp.2">Madrid</option>
+                                                        <option value="esp.3">Valencia</option>
+                                                        <option value="esp.4">Tenerife</option>
+                                                    </optgroup>
+                                                    <optgroup label="Germany">
+            											<option value="de.1">Munich</option>
+            											<option value="de.2">Berlin</option>
+                                                        <option value="de.3">Cologne</option>
+                                                    </optgroup>
+                                                    <optgroup label="Italy">
+            											<option value="it.1">Rome</option>
+            											<option value="it.2">Pisa</option>
+                                                        <option value="it.3">Milan</option>
+                                                        <option value="it.4">Palermo</option>
+                                                        <option value="it.5">Genova</option>
+                                                    </optgroup>
+                                                    <optgroup label="France">
+            											<option value="fr.1">Paris</option>
+            											<option value="fr.2">Strasbourg</option>
+                                                    </optgroup>
         										</select>                                        
         									</div>
                                             <div class="form-group tm-form-group tm-form-group-1">                                    
                                                 <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
                                                     <label for="inputRoom">Choose your destination</label>
                                                     <select name="room" class="form-control tm-select" id="inputRoom">
-                                                        <option value="1" selected>Amsterdam</option>
-                                                        <option value="2">Barcelona</option>
-                                                        <option value="3">Malta</option>
+                                                        <optgroup label="Russia">
+                											<option value="rus.1" selected>Ekaterinburg</option>
+                											<option value="rus.2">Moscow</option>
+                                                            <option value="rus.3">Chelyabinsk</option>
+                                                            <option value="rus.4">Perm</option>
+                                                            <option value="rus.5">St.Petersburg</option>
+                                                        </optgroup>
+                                                        <optgroup label="Spain">
+                											<option value="esp.1">Barcelona</option>
+                											<option value="esp.2">Madrid</option>
+                                                            <option value="esp.3">Valencia</option>
+                                                            <option value="esp.4">Tenerife</option>
+                                                        </optgroup>
+                                                        <optgroup label="Germany">
+                											<option value="de.1">Munich</option>
+                											<option value="de.2">Berlin</option>
+                                                            <option value="de.3">Cologne</option>
+                                                        </optgroup>
+                                                        <optgroup label="Italy">
+                											<option value="it.1">Rome</option>
+                											<option value="it.2">Pisa</option>
+                                                            <option value="it.3">Milan</option>
+                                                            <option value="it.4">Palermo</option>
+                                                            <option value="it.5">Genova</option>
+                                                        </optgroup>
+                                                        <optgroup label="France">
+                											<option value="fr.1">Paris</option>
+                											<option value="fr.2">Strasbourg</option>
+                                                        </optgroup>
                                                     </select>                                        
                                                 </div>
                                                 <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
@@ -143,12 +199,12 @@ http://www.templatemo.com/tm-511-journey
                                         <div class="form-row tm-search-form-row">
 
                                             <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                                <label for="inputCheckIn">Outward</label>
-                                                <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                                                <label for="inputCheckIn1">Outward</label>
+                                                <input name="check-in" type="text" class="form-control" id="inputCheckIn1" placeholder="Check In">
                                             </div>
                                             <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                                <label for="inputCheckOut">Return</label>
-                                                <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                                                <label for="inputCheckOut1">Return</label>
+                                                <input name="check-out" type="text" class="form-control" id="inputCheckOut1" placeholder="Check Out">
                                             </div>
                                             <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
                                                 <label for="btnSubmit">&nbsp;</label>
@@ -164,9 +220,35 @@ http://www.templatemo.com/tm-511-journey
                                             <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
         										<label for="inputRoom">Origin</label>
         										<select name="room" class="form-control tm-select" id="inputRoom">
-        											<option value="1" selected>SVX</option>
-        											<option value="2">MOW</option>
-        											<option value="3">MUN</option>
+                                                    <optgroup label="Russia">
+            											<option value="rus.1" selected>Ekaterinburg</option>
+            											<option value="rus.2">Moscow</option>
+                                                        <option value="rus.3">Chelyabinsk</option>
+                                                        <option value="rus.4">Perm</option>
+                                                        <option value="rus.5">St.Petersburg</option>
+                                                    </optgroup>
+                                                    <optgroup label="Spain">
+            											<option value="esp.1">Barcelona</option>
+            											<option value="esp.2">Madrid</option>
+                                                        <option value="esp.3">Valencia</option>
+                                                        <option value="esp.4">Tenerife</option>
+                                                    </optgroup>
+                                                    <optgroup label="Germany">
+            											<option value="de.1">Munich</option>
+            											<option value="de.2">Berlin</option>
+                                                        <option value="de.3">Cologne</option>
+                                                    </optgroup>
+                                                    <optgroup label="Italy">
+            											<option value="it.1">Rome</option>
+            											<option value="it.2">Pisa</option>
+                                                        <option value="it.3">Milan</option>
+                                                        <option value="it.4">Palermo</option>
+                                                        <option value="it.5">Genova</option>
+                                                    </optgroup>
+                                                    <optgroup label="France">
+            											<option value="fr.1">Paris</option>
+            											<option value="fr.2">Strasbourg</option>
+                                                    </optgroup>
         										</select>                                        
         									</div>
                                             <div class="form-group tm-form-group tm-form-group-1">                                    
@@ -178,6 +260,7 @@ http://www.templatemo.com/tm-511-journey
                                                         <option value="3">Italy</option>
                                                         <option value="4">Spain</option>
                                                         <option value="5">France</option>
+                                                        <option value="6">Russia</option>
                                                     </select>                                        
                                                 </div>
                                                 <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
@@ -216,12 +299,12 @@ http://www.templatemo.com/tm-511-journey
                                         <div class="form-row tm-search-form-row">
 
                                             <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                                <label for="inputCheckIn">Outward</label>
-                                                <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                                                <label for="inputCheckIn2">Outward</label>
+                                                <input name="check-in" type="text" class="form-control" id="inputCheckIn2" placeholder="Check In">
                                             </div>
                                             <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
-                                                <label for="inputCheckOut">Return</label>
-                                                <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                                                <label for="inputCheckOut2">Return</label>
+                                                <input name="check-out" type="text" class="form-control" id="inputCheckOut2" placeholder="Check Out">
                                             </div>
                                             <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
                                                 <label for="btnSubmit">&nbsp;</label>
@@ -255,9 +338,7 @@ http://www.templatemo.com/tm-511-journey
             <div class="tm-container-outer" id="tm-section-2">
                 <section class="tm-slideshow-section">
                     <div class="tm-slideshow">
-                        <img src="img/tm-img-01.jpg" alt="Image">
-                        <img src="img/tm-img-02.jpg" alt="Image">
-                        <img src="img/tm-img-03.jpg" alt="Image">    
+                        <img src="img/tm-img-01.jpg" alt="Image"> 
                     </div>
                     <div class="tm-slideshow-description tm-bg-primary">
                         <h2 class="">Direct route is not the cheapest</h2>
@@ -269,8 +350,6 @@ http://www.templatemo.com/tm-511-journey
 
                     <div class="tm-right tm-slideshow tm-slideshow-highlight">
                         <img src="img/tm-img-02.jpg" alt="Image">
-                        <img src="img/tm-img-03.jpg" alt="Image">
-                        <img src="img/tm-img-01.jpg" alt="Image">
                     </div> 
 
                     <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
@@ -283,8 +362,6 @@ http://www.templatemo.com/tm-511-journey
                 <section class="tm-slideshow-section">
                     <div class="tm-slideshow">
                         <img src="img/tm-img-03.jpg" alt="Image">
-                        <img src="img/tm-img-02.jpg" alt="Image">
-                        <img src="img/tm-img-01.jpg" alt="Image">
                     </div>
                     <div class="tm-slideshow-description tm-bg-primary">
                         <h2 class="">Analyzing transportation options you'd never think about</h2>
@@ -328,55 +405,42 @@ http://www.templatemo.com/tm-511-journey
                             <div class="tm-recommended-place">
                                 <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">North Garden Resort</h3>
-                                    <p class="tm-text-highlight">One North</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                    <h3 class="tm-recommended-title">Direct flight</h3>
+                                    <p class="tm-text-highlight">light</p>
+                                    <p class="tm-text-gray">3h</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">$110</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                    <p class="tm-recommended-price-link">Buy</p>
                                 </a>                        
                             </div>
 
                             <div class="tm-recommended-place">
                                 <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Felis nec dignissim</h3>
-                                    <p class="tm-text-highlight">Two North</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                    <h3 class="tm-recommended-title">Rome - Pisa (train) + Pisa - Fez</h3>
+                                    <p class="tm-text-highlight">medium</p>
+                                    <p class="tm-text-gray">?h</p>   
                                 </div>
                                 <div id="preload-hover-img"></div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$120</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                    <p class="tm-recommended-price">$30</p>
+                                    <p class="tm-recommended-price-link">Buy</p>
                                 </a>
                             </div>
 
                             <div class="tm-recommended-place">
                                 <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Sed fermentum justo</h3>
-                                    <p class="tm-text-highlight">Three North</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                    <h3 class="tm-recommended-title">Rome - Pisa + Pisa - Fez</h3>
+                                    <p class="tm-text-highlight">light-medium</p>
+                                    <p class="tm-text-gray">?h</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$130</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                    <p class="tm-recommended-price">$75</p>
+                                    <p class="tm-recommended-price-link">Buy</p>
                                 </a>
                             </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Maecenas ultricies neque</h3>
-                                    <p class="tm-text-highlight">Four North</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$140</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>    
                         </div>                        
 
                         <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
@@ -389,20 +453,20 @@ http://www.templatemo.com/tm-511-journey
                             <div class="tm-recommended-place">
                                 <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">South Resort Hotel</h3>
-                                    <p class="tm-text-highlight">South One</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                    <h3 class="tm-recommended-title">Direct flight</h3>
+                                    <p class="tm-text-highlight">light</p>
+                                    <p class="tm-text-gray">?h</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$220</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                    <p class="tm-recommended-price">$50</p>
+                                    <p class="tm-recommended-price-link">Buy</p>
                                 </a>                        
                             </div>
 
                             <div class="tm-recommended-place">
                                 <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Aenean ac ante nec diam</h3>
+                                    <h3 class="tm-recommended-title">Rome - Naples (train) + </h3>
                                     <p class="tm-text-highlight">South Second</p>
                                     <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
                                 </div>
@@ -449,54 +513,41 @@ http://www.templatemo.com/tm-511-journey
                             <div class="tm-recommended-place">
                                 <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Europe Hotel</h3>
-                                    <p class="tm-text-highlight">Venecia, Italy</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                    <h3 class="tm-recommended-title">Direct flight</h3>
+                                    <p class="tm-text-highlight">light</p>
+                                    <p class="tm-text-gray">4h</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$330</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                    <p class="tm-recommended-price">$250</p>
+                                    <p class="tm-recommended-price-link">Buy</p>
                                 </a>                        
                             </div>
 
                             <div class="tm-recommended-place">
                                 <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">In viverra enim turpis</h3>
-                                    <p class="tm-text-highlight">Paris, France</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                    <h3 class="tm-recommended-title">Ekaterinburg - Moscow + Moscow - Amsterdam</h3>
+                                    <p class="tm-text-highlight">light</p>
+                                    <p class="tm-text-gray">?h</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$340</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                    <p class="tm-recommended-price">$170</p>
+                                    <p class="tm-recommended-price-link">Buy</p>
                                 </a>
                             </div>
 
                             <div class="tm-recommended-place">
                                 <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Volutpat pellentesque</h3>
-                                    <p class="tm-text-highlight">Barcelona, Spain</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                    <h3 class="tm-recommended-title">Ekaterinburg - Moscow + Moscow - Cologne + Cologne - Amsterdam (train)</h3>
+                                    <p class="tm-text-highlight">light-medium</p>
+                                    <p class="tm-text-gray">?h</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$350</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                    <p class="tm-recommended-price">$100</p>
+                                    <p class="tm-recommended-price-link">Buy</p>
                                 </a>
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Grand Resort Pasha</h3>
-                                    <p class="tm-text-highlight">Istanbul, Turkey</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$360</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>    
+                            </div>  
                         </div>                        
 
                         <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
@@ -509,245 +560,41 @@ http://www.templatemo.com/tm-511-journey
                             <div class="tm-recommended-place">
                                 <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Asia Resort Hotel</h3>
-                                    <p class="tm-text-highlight">Singapore</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                    <h3 class="tm-recommended-title">Direct flight</h3>
+                                    <p class="tm-text-highlight">light</p>
+                                    <p class="tm-text-gray">?h</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$440</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                    <p class="tm-recommended-price">$250</p>
+                                    <p class="tm-recommended-price-link">Buy</p>
                                 </a>                        
                             </div>
 
                             <div class="tm-recommended-place">
                                 <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Nullam eget est a nisl</h3>
-                                    <p class="tm-text-highlight">Yangon, Myanmar</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                    <h3 class="tm-recommended-title">St.Petersburg - Helsinki (bus) + Helsinki - Prague</h3>
+                                    <p class="tm-text-highlight">light-medium/p>
+                                    <p class="tm-text-gray">?h</p>   
                                 </div>
                                 <div id="preload-hover-img"></div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$450</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                    <p class="tm-recommended-price">$60</p>
+                                    <p class="tm-recommended-price-link">Buy</p>
                                 </a>
                             </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Proin interdum ullamcorper</h3>
-                                    <p class="tm-text-highlight">Bangkok, Thailand</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$460</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Lorem ipsum dolor sit</h3>
-                                    <p class="tm-text-highlight">Vientiane, Laos</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$470</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>    
                         </div>                        
 
                         <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
                     </div> <!-- tab-pane -->
                     
-                    <!-- Tab 5 -->
-                    <div class="tab-pane fade" id="5a">
-
-                        <div class="tm-recommended-place-wrap">
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Africa Resort Hotel</h3>
-                                    <p class="tm-text-highlight">First City</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$550</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>                        
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Aenean ac magna diam</h3>
-                                    <p class="tm-text-highlight">Second City</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$560</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Beach Barbecue Sunset</h3>
-                                    <p class="tm-text-highlight">Third City</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$570</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Grand Resort Pasha</h3>
-                                    <p class="tm-text-highlight">Fourth City</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$580</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>    
-                        </div>                        
-
-                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
-                    </div> <!-- tab-pane -->   
-                    
-                    <!-- Tab 6 -->            
-                    <div class="tab-pane fade" id="6a">
-
-                        <div class="tm-recommended-place-wrap">
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Hotel Australia</h3>
-                                    <p class="tm-text-highlight">City One</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$660</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>                        
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Proin interdum ullamcorper</h3>
-                                    <p class="tm-text-highlight">City Two</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$650</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Beach Barbecue Sunset</h3>
-                                    <p class="tm-text-highlight">City Three</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$640</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Grand Resort Pasha</h3>
-                                    <p class="tm-text-highlight">City Four</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$630</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>    
-                        </div>                        
-
-                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
-                    </div> <!-- tab-pane -->
-                    
-                    <!-- Tab 7 -->
-                    <div class="tab-pane fade" id="7a">
-
-                        <div class="tm-recommended-place-wrap">
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Antartica Resort</h3>
-                                    <p class="tm-text-highlight">Ant City One</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$770</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>                        
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Pulvinar Semper</h3>
-                                    <p class="tm-text-highlight">Ant City Two</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$230</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Cras vel sapien</h3>
-                                    <p class="tm-text-highlight">Ant City Three</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$140</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>
-
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Nullam eget est</h3>
-                                    <p class="tm-text-highlight">Ant City Four</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$190</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>    
-                        </div>                        
-
-                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
-                    </div> <!-- tab-pane -->
                 </div>
             </div>
 
             <div class="tm-container-outer tm-position-relative" id="tm-section-4">
                 <div id="google-map"></div>
                 <form action="index.html" method="post" class="tm-contact-form">
+                    <div class="row justify-content-center" style="padding: 5px;">Tell us anything.</div>
                     <div class="form-group tm-name-container">
                         <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
                     </div>
@@ -765,7 +612,7 @@ http://www.templatemo.com/tm-511-journey
             </div> <!-- .tm-container-outer -->
 
             <footer class="tm-container-outer">
-                <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Your Company 
+                <p class="mb-0">Copyright © <span class="tm-current-year">2019</span> Trippo
                     
                 . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Template Mo</a></p>
             </footer>
@@ -802,6 +649,7 @@ http://www.templatemo.com/tm-511-journey
     <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
     <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
     <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6/js/select2.min.js"></script>
     <script> 
         /* Google Maps
         ------------------------------------------------*/
@@ -854,10 +702,13 @@ http://www.templatemo.com/tm-511-journey
             $('.tm-down-arrow-link').click(function(){
                 $.scrollTo('#tm-section-search', 300, {easing:'linear'});
             });
+            
+            $('#myTab a').on('click', function (e) {
+              e.preventDefault()
+              $(this).tab('show')
+            })
 
-            // Date Picker in Search form
-            var pickerCheckIn = datepicker('#inputCheckIn');
-            var pickerCheckOut = datepicker('#inputCheckOut');
+            
 
             // Update nav links on scroll
             $('#tm-top-bar').singlePageNav({
@@ -866,20 +717,31 @@ http://www.templatemo.com/tm-511-journey
             });
 
             // Close navbar after clicked
-            $('.nav-link').click(function(){
-                $('#mainNav').removeClass('show');
-            });
+            
 
             // Slick Carousel
-            $('.tm-slideshow').slick({
-                infinite: true,
-                arrows: true,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            });
+            //$('.tm-slideshow').slick({
+            //    infinite: true,
+            //    arrows: true,
+            //    slidesToShow: 1,
+            //    slidesToScroll: 1
+                //});
 
-            loadGoogleMap();                                       // Google Map                
-            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+            //loadGoogleMap();                                       // Google Map                
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright    
+            
+            //$('select').select2();
+        });
+        
+        $('#exactSearch').ready(function(){
+            // Date Picker in Search form
+            var pickerCheckIn1 = datepicker('#inputCheckIn1');
+            var pickerCheckOut1 = datepicker('#inputCheckOut1');
+        });
+        $('#cheapestSearch').ready(function(){
+            // Date Picker in Search form
+            var pickerCheckIn1 = datepicker('#inputCheckIn2');
+            var pickerCheckOut1 = datepicker('#inputCheckOut2');
         });
 
     </script>             

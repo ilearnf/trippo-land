@@ -494,10 +494,11 @@ footer p { color: white; }
 }
 
 .map-img {
-	max-width: 300px;
+	width: 250px;
+    height: 200px;
 }
 
-#google-map { height: 600px; }
+#google-map { height: 600px; background: #eee;}
 
 @media screen and (max-width: 1080px) {
     .tm-tab-link-li { width: 25%; }
