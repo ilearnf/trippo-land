@@ -243,6 +243,8 @@ label { font-weight: 700; }
 
 .tm-slideshow { width: 50%; }
 
+.tm-slideshow img { width: 700px; height: 500px; }
+
 .tm-slideshow-description {
     padding: 50px;
     color: white;
@@ -383,7 +385,7 @@ label { font-weight: 700; }
     text-transform: uppercase;    
 }
 
-.tm-recommended-img { width: 270px; }
+.tm-recommended-img { width: 270px; height: 180px; }
 
 .tm-recommended-description-box {
     padding: 30px;

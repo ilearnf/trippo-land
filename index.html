@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Journey HTML CSS Template</title>
+    <title>Trippo - About</title>
 <!-- 
 Journey Template 
 http://www.templatemo.com/tm-511-journey
@@ -18,6 +18,7 @@ http://www.templatemo.com/tm-511-journey
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,7 +51,7 @@ http://www.templatemo.com/tm-511-journey
                                     <a class="nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-2">About</a>
+                                    <a class="nav-link" href="#tm-section-2">How it works</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#tm-section-3">Examples</a>
@@ -196,6 +197,58 @@ http://www.templatemo.com/tm-511-journey
                                                 </div>
                                             </div>
                                         </div> <!-- form-row -->
+                                        
+                                        <div class="form-row tm-search-form-row">
+                                            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                                <label for="inputMaxChanges">Max. changes</label>                                            
+                                                <select name="maxChanges" class="form-control tm-select" id="inputMaxChanges">
+                                                	<option value="0" selected>Any</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                </select>                                        
+                                            </div>
+                                            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                                <label for="inputMinStop">Min. stop duration</label>                                            
+                                                <select name="minStop" class="form-control tm-select" id="inputMinStop">
+                                                	<option value="0" selected>Just enough for transfer (minumim)</option>
+                                                    <option value="2">Enough for break in the airport</option>
+                                                    <option value="3">Enough to have a walk in the city</option>
+                                                    <option value="4">Enough for excursion</option>
+                                                    <option value="5">Night stop-over</option>
+                                                    <option value="6">2 days and more</option>
+                                                </select>                                        
+                                            </div>
+                                            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                                <label>Transport types</label>
+                                                <br />
+                                                <div class="form-check form-check-inline">
+                                                  <input type="checkbox" checked id="typesFlight">
+                                                  <label for="typesFlight">
+                                                    Flights
+                                                  </label>
+                                                </div>
+                                                <div class="form-check form-check-inline" style="margin-left: 10px;">
+                                                  <input type="checkbox" checked value="" id="typesTrains">
+                                                  <label for="typesTrains">
+                                                    Train
+                                                  </label>
+                                                </div>
+                                                <div class="form-check form-check-inline" style="margin-left: 10px;">
+                                                  <input type="checkbox" checked value="" id="typesBus">
+                                                  <label for="typesBus">
+                                                    Bus
+                                                  </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                         <div class="form-row tm-search-form-row">
 
                                             <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
@@ -296,6 +349,58 @@ http://www.templatemo.com/tm-511-journey
                                                 </div>
                                             </div>
                                         </div> <!-- form-row -->
+                                        
+                                        <div class="form-row tm-search-form-row">
+                                            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                                <label for="inputMaxChanges">Max. changes</label>                                            
+                                                <select name="maxChanges" class="form-control tm-select" id="inputMaxChanges">
+                                                	<option value="0" selected>Any</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                </select>                                        
+                                            </div>
+                                            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                                <label for="inputMinStop">Min. stop duration</label>                                            
+                                                <select name="minStop" class="form-control tm-select" id="inputMinStop">
+                                                	<option value="0" selected>Just enough for transfer (minumim)</option>
+                                                    <option value="2">Enough for break in the airport</option>
+                                                    <option value="3">Enough to have a walk in the city</option>
+                                                    <option value="4">Enough for excursion</option>
+                                                    <option value="5">Night stop-over</option>
+                                                    <option value="6">2 days and more</option>
+                                                </select>                                        
+                                            </div>
+                                            <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                                <label>Transport types</label>
+                                                <br />
+                                                <div class="form-check form-check-inline">
+                                                  <input type="checkbox" checked id="typesFlight">
+                                                  <label for="typesFlight">
+                                                    Flights
+                                                  </label>
+                                                </div>
+                                                <div class="form-check form-check-inline" style="margin-left: 10px;">
+                                                  <input type="checkbox" checked value="" id="typesTrains">
+                                                  <label for="typesTrains">
+                                                    Train
+                                                  </label>
+                                                </div>
+                                                <div class="form-check form-check-inline" style="margin-left: 10px;">
+                                                  <input type="checkbox" checked value="" id="typesBus">
+                                                  <label for="typesBus">
+                                                    Bus
+                                                  </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                         <div class="form-row tm-search-form-row">
 
                                             <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
@@ -327,9 +432,9 @@ http://www.templatemo.com/tm-511-journey
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
-                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> can be as interesting as <strong>cheap</strong></h2>
-                            <p class="mb-4">We are here to find the cheapest route for you.</p>
-                            <a href="#" class="text-uppercase btn-primary tm-btn">Continue explore</a>                              
+                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> can be as <strong>cheap</strong> as interesting</h2>
+                            <p class="mb-4">We are here to find the cheapest route for you. Trippo analyzes all available flight/train/bus combinations and helps you to reduce your journey price.</p>
+                            <a href="#tm-section-2" class="text-uppercase btn-primary tm-btn">See how it works</a>                              
                         </div>
                     </div>
                 </div>            
@@ -342,8 +447,8 @@ http://www.templatemo.com/tm-511-journey
                     </div>
                     <div class="tm-slideshow-description tm-bg-primary">
                         <h2 class="">Direct route is not the cheapest</h2>
-                        <p>Did you know you can find the route that is cheaper than the direct one? But it takes a lot of time to analyze every transportation option. Also you need to know some special travel insights to find the best route. We have huge experience in travel and can make this hard work for you. Just tell us your trip wishes!</p>
-                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                        <p>Did you know you can find the route that is cheaper than the direct one? But it takes a lot of time to analyze every transportation option - for every direction and on every website. Also you need to know some special travel insights to find the best route. We have huge experience in travel and can make this hard work for you. Just tell us your trip wishes!</p>
+                        <a href="example.html" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">See real-life example</a>
                     </div>
                 </section>
                 <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
@@ -353,9 +458,8 @@ http://www.templatemo.com/tm-511-journey
                     </div> 
 
                     <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
-                        <h2 class="">We are combining the uncombinable!</h2>
-                        <p>We know that sometimes it's cheaper to take a stop in some city rather than take a direct flight. But it's hard to find that city - there are so many options!</p>
-                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue Reading</a>
+                        <h2 class="">We are combining the uncombinable! And you save your time.</h2>
+                        <p>There are lots of transporting option combinations - flights, trains, buses. Also there are a lot of websites to search these options. Only RyanAir flies to 39 countries (it is more than 1482 combinations), but there are lots of other airlines. Our customers tell us that they spent more than 8 hours to find optimal route before they started using us. Trippo knows about every single option and tries to combine it for you - just in several secons.</p>
                     </div>                        
 
                 </section>
@@ -366,7 +470,7 @@ http://www.templatemo.com/tm-511-journey
                     <div class="tm-slideshow-description tm-bg-primary">
                         <h2 class="">Analyzing transportation options you'd never think about</h2>
                         <p>Our staff and our platform can analyze all available flights/trains/buses through your itienary and find the cheapest combination. While it is left for you to enjoy the list of options and dream about your trip. Our system is very smart.</p>
-                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                        <p>Stop-overs in some cities are cheap - but you should know these cities. Sometimes it is even cheaper to buy flight with change in your destination city but not use this change.</p>
                     </div>
                 </section>
             </div>        
@@ -380,13 +484,13 @@ http://www.templatemo.com/tm-511-journey
                     </li>
                     <li class="tm-tab-link-li">
                         <a href="#2a" data-toggle="tab" class="tm-tab-link">
-                            <img src="img/map2.jpg" alt="Image" class="img-fluid map-img">
-                            Rome - Malta
+                            <img src="img/map2.png" alt="Image" class="img-fluid map-img">
+                            Strasbourg - Tenerife
                         </a>
                     </li>
                     <li class="tm-tab-link-li">
                         <a href="#3a" data-toggle="tab" class="tm-tab-link">
-                            <img src="img/map3.jpg" alt="Image" class="img-fluid map-img">
+                            <img src="img/map3.png" alt="Image" class="img-fluid map-img">
                             Ekaterinburg - Amsterdam
                         </a>
                     </li>
@@ -403,47 +507,47 @@ http://www.templatemo.com/tm-511-journey
                     <div class="tab-pane fade" id="1a">
                         <div class="tm-recommended-place-wrap">
                             <div class="tm-recommended-place">
-                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/e-1-1.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Direct flight</h3>
-                                    <p class="tm-text-highlight">light</p>
-                                    <p class="tm-text-gray">3h</p>   
+                                    <h3 class="tm-recommended-title">Direct <i class="fas fa-plane"></i></h3>
+                                    <p class="tm-text-highlight">light difficulty</p>
+                                    <p class="tm-text-gray">This is the fastest and so that expensive way to reach your destination.</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$110</p>
-                                    <p class="tm-recommended-price-link">Buy</p>
+                                    <p class="tm-recommended-price">from $110</p>
+                                    <p class="tm-recommended-price-link">Search</p>
                                 </a>                        
                             </div>
 
                             <div class="tm-recommended-place">
-                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/e-1-2.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Rome - Pisa (train) + Pisa - Fez</h3>
-                                    <p class="tm-text-highlight">medium</p>
-                                    <p class="tm-text-gray">?h</p>   
+                                    <h3 class="tm-recommended-title">Rome - Pisa <i class="fas fa-train"></i> + Pisa - Fez <i class="fas fa-plane"></i></h3>
+                                    <p class="tm-text-highlight">medium difficulty</p>
+                                    <p class="tm-text-gray">This option is much cheaper but you have to use train. You may also see Leaning Tower during your stop.</p>   
                                 </div>
                                 <div id="preload-hover-img"></div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$30</p>
-                                    <p class="tm-recommended-price-link">Buy</p>
+                                    <p class="tm-recommended-price">from $30</p>
+                                    <p class="tm-recommended-price-link">Search</p>
                                 </a>
                             </div>
 
                             <div class="tm-recommended-place">
-                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/e-1-2.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Rome - Pisa + Pisa - Fez</h3>
-                                    <p class="tm-text-highlight">light-medium</p>
-                                    <p class="tm-text-gray">?h</p>   
+                                    <h3 class="tm-recommended-title">Rome - Pisa <i class="fas fa-plane"></i> + Pisa - Fez <i class="fas fa-plane"></i></h3>
+                                    <p class="tm-text-highlight">light-medium difficulty</p>
+                                    <p class="tm-text-gray">This option is not much less comfortable than the direct flight. But it is really cheaper!</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$75</p>
-                                    <p class="tm-recommended-price-link">Buy</p>
+                                    <p class="tm-recommended-price">from $75</p>
+                                    <p class="tm-recommended-price-link">Search</p>
                                 </a>
                             </div>
                         </div>                        
 
-                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                        <h4>You can save about $80 with Trippo!</h4> 
                     </div> <!-- tab-pane -->
                     
                     <!-- Tab 2 -->
@@ -451,59 +555,47 @@ http://www.templatemo.com/tm-511-journey
 
                         <div class="tm-recommended-place-wrap">
                             <div class="tm-recommended-place">
-                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/e-2-1.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Direct flight</h3>
-                                    <p class="tm-text-highlight">light</p>
-                                    <p class="tm-text-gray">?h</p>   
+                                    <h3 class="tm-recommended-title">Direct <i class="fas fa-plane"></i></h3>
+                                    <p class="tm-text-highlight">light difficulty</p>
+                                    <p class="tm-text-gray">Direct flight is expensive as always.</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$50</p>
-                                    <p class="tm-recommended-price-link">Buy</p>
+                                    <p class="tm-recommended-price">from $290</p>
+                                    <p class="tm-recommended-price-link">Search</p>
                                 </a>                        
                             </div>
 
                             <div class="tm-recommended-place">
-                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/e-2-2.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Rome - Naples (train) + </h3>
-                                    <p class="tm-text-highlight">South Second</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                    <h3 class="tm-recommended-title">Strasbourg - Baden-Baden <i class="fas fa-bus"></i> + Baden-Baden - Seville <i class="fas fa-plane"></i> + Seville - Tenerife <i class="fas fa-plane"></i></h3>
+                                    <p class="tm-text-highlight">medium difficulty</p>
+                                    <p class="tm-text-gray">This option might be difficult but the economy is really huge.</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$230</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                    <p class="tm-recommended-price">from $50</p>
+                                    <p class="tm-recommended-price-link">Search</p>
                                 </a>
                             </div>
-
+                            
                             <div class="tm-recommended-place">
-                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/e-2-3.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Suspendisse nec dapibus</h3>
-                                    <p class="tm-text-highlight">South Third</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                    <h3 class="tm-recommended-title">Strasbourg - Paris <i class="fas fa-plane"></i> + Paris - Tenerife <i class="fas fa-plane"></i></h3>
+                                    <p class="tm-text-highlight">light-medium difficulty</p>
+                                    <p class="tm-text-gray">It would be a bit less expensive than direct flight and also comfortable because what we mean by "direct" could be not direct literally - it is just a single-ticket flight and you might also have a change.</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$240</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                    <p class="tm-recommended-price">from 150</p>
+                                    <p class="tm-recommended-price-link">Search</p>
                                 </a>
                             </div>
+                        </div>
+                        
+                        <h4>You can save about $240 with Trippo!</h4>                        
 
-                            <div class="tm-recommended-place">
-                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
-                                <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Aliquam viverra mi at nisl</h3>
-                                    <p class="tm-text-highlight">South Fourth</p>
-                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
-                                </div>
-                                <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$250</p>
-                                    <p class="tm-recommended-price-link">Continue Reading</p>
-                                </a>
-                            </div>    
-                        </div>                        
-
-                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
                     </div> <!-- tab-pane -->          
                     
                     <!-- Tab 3 -->     
@@ -511,46 +603,46 @@ http://www.templatemo.com/tm-511-journey
 
                         <div class="tm-recommended-place-wrap">
                             <div class="tm-recommended-place">
-                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/e-3-1.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Direct flight</h3>
-                                    <p class="tm-text-highlight">light</p>
-                                    <p class="tm-text-gray">4h</p>   
+                                    <h3 class="tm-recommended-title">Direct <i class="fas fa-plane"></i></h3>
+                                    <p class="tm-text-highlight">light difficulty</p>
+                                    <p class="tm-text-gray">In Russia flights from cities other than Moscow or St.Petersburg are usually expensive. As this flight is.</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$250</p>
-                                    <p class="tm-recommended-price-link">Buy</p>
+                                    <p class="tm-recommended-price">from $250</p>
+                                    <p class="tm-recommended-price-link">Search</p>
                                 </a>                        
                             </div>
 
                             <div class="tm-recommended-place">
-                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/e-3-2.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Ekaterinburg - Moscow + Moscow - Amsterdam</h3>
-                                    <p class="tm-text-highlight">light</p>
-                                    <p class="tm-text-gray">?h</p>   
+                                    <h3 class="tm-recommended-title">Ekaterinburg - Moscow <i class="fas fa-plane"></i> + Moscow - Amsterdam <i class="fas fa-plane"></i></h3>
+                                    <p class="tm-text-highlight">light difficulty</p>
+                                    <p class="tm-text-gray">But simply combining different airlines can reduce ticket price. Trippo helps with it.</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$170</p>
-                                    <p class="tm-recommended-price-link">Buy</p>
+                                    <p class="tm-recommended-price">from $170</p>
+                                    <p class="tm-recommended-price-link">Search</p>
                                 </a>
                             </div>
 
                             <div class="tm-recommended-place">
-                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/e-3-3.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Ekaterinburg - Moscow + Moscow - Cologne + Cologne - Amsterdam (train)</h3>
-                                    <p class="tm-text-highlight">light-medium</p>
-                                    <p class="tm-text-gray">?h</p>   
+                                    <h3 class="tm-recommended-title">Ekaterinburg - Moscow <i class="fas fa-plane"></i> + Moscow - Cologne <i class="fas fa-plane"></i> + Cologne - Amsterdam <i class="fas fa-plane"></i></h3>
+                                    <p class="tm-text-highlight">light-medium difficulty</p>
+                                    <p class="tm-text-gray">This option saves you money and gives you opportunity to see Cologne.</p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$100</p>
-                                    <p class="tm-recommended-price-link">Buy</p>
+                                    <p class="tm-recommended-price">from $100</p>
+                                    <p class="tm-recommended-price-link">Search</p>
                                 </a>
                             </div>  
                         </div>                        
 
-                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                        <h4>You can save about $150 with Trippo!</h4> 
                     </div> <!-- tab-pane -->
                     
                     <!-- Tab 4 -->
@@ -558,34 +650,34 @@ http://www.templatemo.com/tm-511-journey
                     <!-- Current Active Tab WITH "show active" classes in DIV tag -->
                         <div class="tm-recommended-place-wrap">
                             <div class="tm-recommended-place">
-                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/e-4-1.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">Direct flight</h3>
-                                    <p class="tm-text-highlight">light</p>
-                                    <p class="tm-text-gray">?h</p>   
+                                    <h3 class="tm-recommended-title">Direct <i class="fas fa-plane"></i></h3>
+                                    <p class="tm-text-highlight">light difficulty</p>
+                                    <p class="tm-text-gray"></p>   
                                 </div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$250</p>
-                                    <p class="tm-recommended-price-link">Buy</p>
+                                    <p class="tm-recommended-price">from $250</p>
+                                    <p class="tm-recommended-price-link">Search</p>
                                 </a>                        
                             </div>
 
                             <div class="tm-recommended-place">
-                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <img src="img/e-4-2.jpg" alt="Image" class="img-fluid tm-recommended-img">
                                 <div class="tm-recommended-description-box">
-                                    <h3 class="tm-recommended-title">St.Petersburg - Helsinki (bus) + Helsinki - Prague</h3>
-                                    <p class="tm-text-highlight">light-medium/p>
-                                    <p class="tm-text-gray">?h</p>   
+                                    <h3 class="tm-recommended-title">St.Petersburg - Helsinki <i class="fas fa-bus"></i> + Helsinki - Prague <i class="fas fa-plane"></i></h3>
+                                    <p class="tm-text-highlight">light-medium difficulty</p>
+                                    <p class="tm-text-gray">It is common practice in St.Petersburg to go to Finland this way. And it also can save your money.</p>   
                                 </div>
                                 <div id="preload-hover-img"></div>
                                 <a href="#" class="tm-recommended-price-box">
-                                    <p class="tm-recommended-price">$60</p>
-                                    <p class="tm-recommended-price-link">Buy</p>
+                                    <p class="tm-recommended-price">from $60</p>
+                                    <p class="tm-recommended-price-link">Search</p>
                                 </a>
                             </div>
                         </div>                        
 
-                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                        <h4>You can save about $190 with Trippo!</h4> 
                     </div> <!-- tab-pane -->
                     
                 </div>
@@ -594,15 +686,12 @@ http://www.templatemo.com/tm-511-journey
             <div class="tm-container-outer tm-position-relative" id="tm-section-4">
                 <div id="google-map"></div>
                 <form action="index.html" method="post" class="tm-contact-form">
-                    <div class="row justify-content-center" style="padding: 5px;">Tell us anything.</div>
+                    <div class="row justify-content-center" style="padding: 5px 5px 20px 0px;">Be the first to use Trippo online or Tell us anything.</div>
                     <div class="form-group tm-name-container">
                         <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
                     </div>
                     <div class="form-group tm-email-container">
                         <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
                     </div>
                     <div class="form-group">
                         <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
@@ -614,7 +703,7 @@ http://www.templatemo.com/tm-511-journey
             <footer class="tm-container-outer">
                 <p class="mb-0">Copyright © <span class="tm-current-year">2019</span> Trippo
                     
-                . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Template Mo</a></p>
+                . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Template Mo</a> and Trippo</p>
             </footer>
         </div>
         
