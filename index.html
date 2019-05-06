@@ -19,6 +19,11 @@ http://www.templatemo.com/tm-511-journey
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<style type="text/css">
+			p {
+				font-size: 14px;
+			}
+	</style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,6 +33,8 @@ http://www.templatemo.com/tm-511-journey
           <![endif]-->
                 
                 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6/css/select2.min.css" rel="stylesheet" />
+				
+		
                 
       </head>
 
@@ -38,7 +45,7 @@ http://www.templatemo.com/tm-511-journey
                 <div class="container">
                     <div class="row">
                         <nav class="navbar navbar-expand-lg narbar-light">
-                            <a class="navbar-brand mr-auto" href="#">
+                            <a class="navbar-brand mr-auto" data-toggle="modal" data-target="#showInfo" href="#">
                                 <img src="img/logo.png" alt="Site logo">
                                 Trippo
                             </a>
@@ -131,7 +138,7 @@ http://www.templatemo.com/tm-511-journey
         									</div>
                                             <div class="form-group tm-form-group tm-form-group-1">                                    
                                                 <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
-                                                    <label for="inputRoom">Choose your destination</label>
+                                                    <label for="inputRoom">Destination</label>
                                                     <select name="room" class="form-control tm-select" id="inputRoom">
                                                         <optgroup label="Russia">
                 											<option value="rus.1" selected>Ekaterinburg</option>
@@ -306,7 +313,7 @@ http://www.templatemo.com/tm-511-journey
         									</div>
                                             <div class="form-group tm-form-group tm-form-group-1">                                    
                                                 <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
-                                                    <label for="inputRoom">Choose your destination</label>
+                                                    <label for="inputRoom">Destination</label>
                                                     <select name="room" class="form-control tm-select" id="inputRoom">
                                                         <option value="1" selected>All Europe</option>
                                                         <option value="2">Germany</option>
@@ -513,7 +520,7 @@ http://www.templatemo.com/tm-511-journey
                                     <p class="tm-text-highlight">light difficulty</p>
                                     <p class="tm-text-gray">This is the fastest and so that expensive way to reach your destination.</p>   
                                 </div>
-                                <a href="#" class="tm-recommended-price-box">
+                                <a data-toggle="modal" data-target="#showInfo" href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">from $110</p>
                                     <p class="tm-recommended-price-link">Search</p>
                                 </a>                        
@@ -527,7 +534,7 @@ http://www.templatemo.com/tm-511-journey
                                     <p class="tm-text-gray">This option is much cheaper but you have to use train. You may also see Leaning Tower during your stop.</p>   
                                 </div>
                                 <div id="preload-hover-img"></div>
-                                <a href="#" class="tm-recommended-price-box">
+                                <a data-toggle="modal" data-target="#showInfo" href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">from $30</p>
                                     <p class="tm-recommended-price-link">Search</p>
                                 </a>
@@ -540,7 +547,7 @@ http://www.templatemo.com/tm-511-journey
                                     <p class="tm-text-highlight">light-medium difficulty</p>
                                     <p class="tm-text-gray">This option is not much less comfortable than the direct flight. But it is really cheaper!</p>   
                                 </div>
-                                <a href="#" class="tm-recommended-price-box">
+                                <a data-toggle="modal" data-target="#showInfo" href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">from $75</p>
                                     <p class="tm-recommended-price-link">Search</p>
                                 </a>
@@ -561,7 +568,7 @@ http://www.templatemo.com/tm-511-journey
                                     <p class="tm-text-highlight">light difficulty</p>
                                     <p class="tm-text-gray">Direct flight is expensive as always.</p>   
                                 </div>
-                                <a href="#" class="tm-recommended-price-box">
+                                <a data-toggle="modal" data-target="#showInfo" href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">from $290</p>
                                     <p class="tm-recommended-price-link">Search</p>
                                 </a>                        
@@ -574,7 +581,7 @@ http://www.templatemo.com/tm-511-journey
                                     <p class="tm-text-highlight">medium difficulty</p>
                                     <p class="tm-text-gray">This option might be difficult but the economy is really huge.</p>   
                                 </div>
-                                <a href="#" class="tm-recommended-price-box">
+                                <a data-toggle="modal" data-target="#showInfo" href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">from $50</p>
                                     <p class="tm-recommended-price-link">Search</p>
                                 </a>
@@ -587,7 +594,7 @@ http://www.templatemo.com/tm-511-journey
                                     <p class="tm-text-highlight">light-medium difficulty</p>
                                     <p class="tm-text-gray">It would be a bit less expensive than direct flight and also comfortable because what we mean by "direct" could be not direct literally - it is just a single-ticket flight and you might also have a change.</p>   
                                 </div>
-                                <a href="#" class="tm-recommended-price-box">
+                                <a data-toggle="modal" data-target="#showInfo" href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">from 150</p>
                                     <p class="tm-recommended-price-link">Search</p>
                                 </a>
@@ -609,7 +616,7 @@ http://www.templatemo.com/tm-511-journey
                                     <p class="tm-text-highlight">light difficulty</p>
                                     <p class="tm-text-gray">In Russia flights from cities other than Moscow or St.Petersburg are usually expensive. As this flight is.</p>   
                                 </div>
-                                <a href="#" class="tm-recommended-price-box">
+                                <a data-toggle="modal" data-target="#showInfo" href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">from $250</p>
                                     <p class="tm-recommended-price-link">Search</p>
                                 </a>                        
@@ -622,7 +629,7 @@ http://www.templatemo.com/tm-511-journey
                                     <p class="tm-text-highlight">light difficulty</p>
                                     <p class="tm-text-gray">But simply combining different airlines can reduce ticket price. Trippo helps with it.</p>   
                                 </div>
-                                <a href="#" class="tm-recommended-price-box">
+                                <a data-toggle="modal" data-target="#showInfo" href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">from $170</p>
                                     <p class="tm-recommended-price-link">Search</p>
                                 </a>
@@ -635,7 +642,7 @@ http://www.templatemo.com/tm-511-journey
                                     <p class="tm-text-highlight">light-medium difficulty</p>
                                     <p class="tm-text-gray">This option saves you money and gives you opportunity to see Cologne.</p>   
                                 </div>
-                                <a href="#" class="tm-recommended-price-box">
+                                <a data-toggle="modal" data-target="#showInfo" href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">from $100</p>
                                     <p class="tm-recommended-price-link">Search</p>
                                 </a>
@@ -656,7 +663,7 @@ http://www.templatemo.com/tm-511-journey
                                     <p class="tm-text-highlight">light difficulty</p>
                                     <p class="tm-text-gray"></p>   
                                 </div>
-                                <a href="#" class="tm-recommended-price-box">
+                                <a data-toggle="modal" data-target="#showInfo" href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">from $250</p>
                                     <p class="tm-recommended-price-link">Search</p>
                                 </a>                        
@@ -670,7 +677,7 @@ http://www.templatemo.com/tm-511-journey
                                     <p class="tm-text-gray">It is common practice in St.Petersburg to go to Finland this way. And it also can save your money.</p>   
                                 </div>
                                 <div id="preload-hover-img"></div>
-                                <a href="#" class="tm-recommended-price-box">
+                                <a data-toggle="modal" data-target="#showInfo" href="#" class="tm-recommended-price-box">
                                     <p class="tm-recommended-price">from $60</p>
                                     <p class="tm-recommended-price-link">Search</p>
                                 </a>
@@ -685,7 +692,7 @@ http://www.templatemo.com/tm-511-journey
 
             <div class="tm-container-outer tm-position-relative" id="tm-section-4">
                 <div id="google-map"></div>
-                <form action="index.html" method="post" class="tm-contact-form">
+                <form class="tm-contact-form">
                     <div class="row justify-content-center" style="padding: 5px 5px 20px 0px;">Be the first to use Trippo online or Tell us anything.</div>
                     <div class="form-group tm-name-container">
                         <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
@@ -696,7 +703,7 @@ http://www.templatemo.com/tm-511-journey
                     <div class="form-group">
                         <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Send Message Now</button>
+                    <button type="button" id="contact_submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Send Message Now</button>
                 </form>
             </div> <!-- .tm-container-outer -->
 
@@ -718,11 +725,13 @@ http://www.templatemo.com/tm-511-journey
                 </button>
               </div>
               <div class="modal-body">
-                  Leave the email and be first to use the service.
+			      <label>Leave the email and be the first to use the service.</label>
+				  <div class="form-group tm-email-container">
+                        <input type="email" id="newEmail" name="newEmail" class="form-control" placeholder="Email"  required/>
+                    </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary" id="sendEmail" data-dismiss="modal">Subscribe</button>
               </div>
             </div>
           </div>
@@ -739,6 +748,7 @@ http://www.templatemo.com/tm-511-journey
     <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
     <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6/js/select2.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
     <script> 
         /* Google Maps
         ------------------------------------------------*/
@@ -832,6 +842,34 @@ http://www.templatemo.com/tm-511-journey
             var pickerCheckIn1 = datepicker('#inputCheckIn2');
             var pickerCheckOut1 = datepicker('#inputCheckOut2');
         });
+		
+		$("#sendEmail").click(function(){
+		    var email = $("#newEmail").val();
+			if (!email)
+			    return;
+		    Email.send({
+				SecureToken : "3f966093-9c86-4c56-b79a-59604229ae77",
+				To : 'trippo-land@hotmail.com',
+				From : "trippo-land@hotmail.com",
+				Subject : "New user",
+				Body : "New user email - " + email
+			});
+		});
+		
+		$("#contact_submit").click(function(){
+		    var email = $("#contact_email").val();
+		    var name = $("#contact_name").val();
+		    var message = $("#contact_message").val();
+			if (!email)
+			    return;
+		    Email.send({
+				SecureToken : "3f966093-9c86-4c56-b79a-59604229ae77",
+				To : 'trippo-land@hotmail.com',
+				From : "trippo-land@hotmail.com",
+				Subject : "New user",
+				Body : "New user message - " + email + "\nName: " + name + "\nMessage: " + message
+			});
+		});
 
     </script>             
 
